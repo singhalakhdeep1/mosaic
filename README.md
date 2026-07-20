@@ -1,8 +1,8 @@
-# 🚀 Universal Platform - Microfrontend Architecture
+# Universal Platform - Microfrontend Architecture
 
 A production-ready microfrontend platform built with Next.js 15, Module Federation, and Turborepo.
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Universal Platform
@@ -22,7 +22,7 @@ Universal Platform
     └── config/             # Shared configuration
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework:** Next.js 15 (App Router)
 - **Language:** TypeScript 5.3
@@ -35,7 +35,7 @@ Universal Platform
 - **Real-time:** Socket.io
 - **Module Federation:** Webpack 5
 
-## 🚦 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js >= 18
@@ -70,7 +70,7 @@ pnpm dev --filter lifestyle-mfe
 | Learning MFE | 3004 | http://localhost:3004 | Courses, Lessons |
 | Health MFE | 3005 | http://localhost:3005 | Healthcare, Appointments |
 
-## 📦 Packages
+## Packages
 
 ### Shared UI (`packages/ui`)
 shadcn/ui components and design system
@@ -84,7 +84,7 @@ Shared TypeScript types and interfaces
 ### Utils (`packages/utils`)
 Common utility functions
 
-## 🏃‍♂️ Development
+## Development
 
 ```bash
 # Run all apps in dev mode
@@ -160,7 +160,7 @@ Contributions are welcome! Please read our contributing guidelines.
 
 ## 📄 License
 
-MIT License
+Proprietary - All rights reserved.
 
 ---
 
