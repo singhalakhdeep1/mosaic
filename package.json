@@ -1,30 +1,30 @@
 {
-    "name": "universal-platform",
-    "version": "1.0.0",
-    "private": true,
-    "description": "Universal Platform - Microfrontend Architecture with Next.js 15",
-    "workspaces": [
-        "packages/*",
-        "apps/*"
-    ],
-    "scripts": {
-        "dev": "turbo run dev",
-        "build": "turbo run build",
-        "start": "turbo run start",
-        "lint": "turbo run lint",
-        "clean": "turbo run clean",
-        "type-check": "turbo run type-check",
-        "test": "turbo run test"
-    },
-    "devDependencies": {
-        "turbo": "^1.11.3",
-        "typescript": "^5.3.3",
-        "prettier": "^3.1.1",
-        "eslint": "^8.56.0"
-    },
-    "engines": {
-        "node": ">=18.0.0",
-        "pnpm": ">=8.0.0"
-    },
-    "packageManager": "pnpm@8.14.1"
+  "name": "universal-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Universal Platform - Microfrontend Architecture with Next.js 15",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "type-check": "turbo run type-check",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "turbo": "^1.11.3",
+    "typescript": "^5.3.3",
+    "prettier": "^3.1.1",
+    "eslint": "^8.56.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.14.1"
 }
