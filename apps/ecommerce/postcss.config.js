@@ -1,8 +1,6 @@
-export default function PostCSSConfig {
-    return {
-        plugins: {
-            tailwindcss: {},
-            autoprefixer: {},
-        },
-    }
+module.exports = {
+    plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+    },
 }

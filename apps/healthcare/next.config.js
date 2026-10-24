@@ -1,21 +1,6 @@
-const NextFederationPlugin = require('@module-federation/nextjs-mf');
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    reactStrictMode: true,
+}
 
-module.exports = {
-    webpack(config) {
-        config.plugins.push(
-            new NextFederationPlugin({
-                name: 'healthcare',
-                filename: 'static/chunks/remoteEntry.js',
-                exposes: {
-                    './DoctorsPage': './src/pages/doctors',
-                    './AppointmentsPage': './src/pages/appointments',
-                },
-                shared: {
-                    react: { singleton: true, eager: true, requiredVersion: false },
-                    'react-dom': { singleton: true, eager: true, requiredVersion: false },
-                },
-            })
-        );
-        return config;
-    },
-};
+module.exports = nextConfig

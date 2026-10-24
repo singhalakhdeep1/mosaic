@@ -6,7 +6,7 @@ import { Calendar, Plus, Search, Filter, MapPin, Users, Clock } from 'lucide-rea
 import Link from 'next/link'
 import { format } from 'date-fns'
 import { eventsService } from '@/lib/api-services'
-import type { Event } from '@universal-platform/types'
+import { EventStatus, type Event } from '@universal-platform/types'
 
 export default function EventsPage() {
     const [searchQuery, setSearchQuery] = useState('')
@@ -93,7 +93,7 @@ export default function EventsPage() {
                                 <div className="p-6">
                                     <div className="flex items-center justify-between mb-3">
                                         <span
-                                            className={`px-3 py-1 rounded-full text-xs font-medium ${event.status === 'upcoming'
+                                            className={`px-3 py-1 rounded-full text-xs font-medium ${event.status === EventStatus.CONFIRMED
                                                     ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
                                                     : 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300'
                                                 }`}

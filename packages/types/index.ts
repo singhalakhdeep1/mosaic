@@ -2,9 +2,11 @@
 export interface User {
     id: string
     email: string
+    name: string
     firstName: string
     lastName: string
     phone?: string
+    address?: string
     role: UserRole
     emailVerified: boolean
     avatar?: string
@@ -61,9 +63,11 @@ export interface Event {
     description?: string
     type: EventType
     status: EventStatus
+    date: string
     startDate: string
     endDate: string
     location: string
+    coverImage?: string
     budget?: number
     guestCount?: number
     userId: string
@@ -86,6 +90,7 @@ export interface Venue {
     name: string
     description?: string
     type: VenueType
+    location: string
     address: string
     city: string
     state: string
@@ -93,6 +98,8 @@ export interface Venue {
     capacity: number
     pricePerHour: number
     amenities?: string[]
+    images?: string[]
+    featured?: boolean
     photos?: VenuePhoto[]
     rating?: number
     reviewCount?: number
@@ -124,6 +131,10 @@ export interface Booking {
     totalAmount: number
     status: BookingStatus
     notes?: string
+    venueName?: string
+    venueLocation?: string
+    eventName?: string
+    deposit?: number
     userId: string
     venueId: string
     venue?: Venue

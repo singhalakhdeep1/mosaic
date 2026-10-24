@@ -1,0 +1,13 @@
+{
+    "name": "@universal-platform/shared-state",
+    "version": "1.0.0",
+    "private": true,
+    "main": "./index.ts",
+    "types": "./index.ts",
+    "dependencies": {
+        "zustand": "^4.4.7"
+    },
+    "devDependencies": {
+        "typescript": "^5.3.3"
+    }
+}

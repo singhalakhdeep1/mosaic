@@ -1,0 +1,14 @@
+{
+    "name": "@universal-platform/ui",
+    "version": "1.0.0",
+    "private": true,
+    "main": "./src/Button.tsx",
+    "types": "./src/Button.tsx",
+    "peerDependencies": {
+        "react": "^18.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.48",
+        "typescript": "^5.3.3"
+    }
+}
